@@ -10,11 +10,11 @@ export default Search =({navigation})=> {
     const [cities,setCities] = useState([])
     const fetchCities = (text)=>{
         setCity(text)
-        fetch("https://autocomplete.wunderground.com/aq?query="+text)
-        .then(item=>item.json())
-        .then(cityData=>{
-            setCities(cityData.RESULTS.slice(0,9))
-        })
+        // fetch("https://autocomplete.wunderground.com/aq?query="+text)
+        // .then(item=>item.json())
+        // .then(cityData=>{
+        //     setCities(cityData.RESULTS.slice(0,9))
+        // })
     }
     const btnClick = async ()=>{
         await AsyncStorage.setItem("newcity",city)

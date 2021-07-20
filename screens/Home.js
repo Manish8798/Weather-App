@@ -69,7 +69,7 @@ const Home = (props)=>{
                margin:8,
                padding:12
            }}>
-           <Title style={{color:"#080808"}}>Temperature - {info.temp}</Title>
+           <Title style={{color:"#080808"}}>Temperature - {info.temp} °C</Title>
            </Card>
            <Card style={{
                margin:8,
