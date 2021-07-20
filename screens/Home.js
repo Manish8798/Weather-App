@@ -24,7 +24,7 @@ const Home = (props)=>{
         }
        
 
-     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${MyCity}&APPID=61f8fdaff980218d924764be979dee7c&units=metric`)
+     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${MyCity}&APPID=91e97df93139086b53ac616aa98d9704&units=metric`)
      .then(data=>data.json())
      .then(results=>{
         setInfo({
